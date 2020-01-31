@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "name": "githubinvites",
+    "builds": [{ "src": "pgithubinvites/package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
+    "routes": [
+        { "src": "/(.*)", "dest": "githubinvites/$1" }
+    ]
